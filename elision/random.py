@@ -1,3 +1,5 @@
+import datetime, time
+
 class random:
 
 	seed_sleep, seed_a, seed_c = 0.1, 1, 4
@@ -29,14 +31,14 @@ class random:
 					return x
 
 				if int_for_gen < x:
-					int_for_gen = int_for_gen + y + 25
+					int_for_gen = int_for_gen + y + 50
 					ei += 1
 
-				int_for_gen /= 17
+				int_for_gen /= 5
 
 				generate = int_for_gen
 			else:
-				int_for_gen = int_for_gen + y + 26
+				int_for_gen = int_for_gen + y + 51
 				ei = 0
 		return int(round(generate))
 
